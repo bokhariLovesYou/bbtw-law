@@ -1,0 +1,81 @@
+$red: #e82e37;
+$lightred: #ffd8dd;
+$white: #fff;
+// @import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,600|Roboto:400,500&display=swap");
+
+body,
+html {
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji",
+    "Segoe UI Symbol";
+  overflow-x: hidden;
+  color: #262b2b;
+  line-height: 1.85;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: "Playfair Display", sans-serif;
+  font-weight: 600;
+  margin-bottom: 0.9rem;
+}
+
+.hp--graphic {
+  height: 400px;
+  position: absolute;
+  @media (min-width: 768px) {
+    height: 700px;
+  }
+  @media (min-width: 992px) {
+    right: -6rem;
+    width: 650px;
+    height: auto;
+    bottom: -10rem;
+    filter: saturate(0.7);
+  }
+  &:not(:root) {
+    overflow: visible;
+  }
+}
+
+.column-image {
+  height: 500px;
+  @media (min-width: 992px) {
+    height: 600px;
+  }
+}
+
+.cta-vector {
+  display: none;
+  @media (min-width: 768px) {
+    height: auto;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: -29%;
+    width: 600px;
+  }
+  @media (min-width: 992px) {
+    right: -10rem;
+  }
+  @media (min-width: 1350px) {
+    width: 800px;
+  }
+  @media (min-width: 1500px) {
+    width: 990px;
+    top: -6rem;
+  }
+  @media (min-width: 1800px) {
+    top: -11rem;
+  }
+}
