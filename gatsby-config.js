@@ -27,6 +27,12 @@ module.exports = {
     `gatsby-plugin-react-svg`,
     `gatsby-transformer-remark`,
     {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-159357234-1",
+      },
+    },
+    {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [`roboto\:400,500`, `playfair display\:400,600`],
