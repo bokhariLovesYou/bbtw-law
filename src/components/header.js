@@ -3,6 +3,8 @@ import React, { Component } from "react"
 import Container from "react-bootstrap/Container"
 // Elements
 import { Button, ContentBox, CustomColumn } from "./Elements"
+// Link
+import { Link } from "gatsby"
 // Styled Components
 import styled from "styled-components"
 const HeaderWrapper = styled.header`
@@ -51,9 +53,11 @@ export class Header extends Component {
             <CustomColumn>
               <ContentBox>
                 <LogoWrapper>
-                  <Logo>
-                    <LogoSpan>bbt</LogoSpan>
-                  </Logo>
+                  <Link to="/">
+                    <Logo>
+                      <LogoSpan>bbt</LogoSpan>
+                    </Logo>
+                  </Link>
                 </LogoWrapper>
               </ContentBox>
             </CustomColumn>

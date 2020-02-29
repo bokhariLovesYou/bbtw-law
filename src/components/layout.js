@@ -14,7 +14,7 @@ export class Layout extends Component {
     return (
       <>
         <Header />
-        <Main>{children}</Main>
+        <Main className={this.props.stretchTop}>{children}</Main>
         <Footer />
       </>
     )

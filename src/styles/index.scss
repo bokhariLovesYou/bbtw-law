@@ -79,3 +79,9 @@ h6,
     top: -11rem;
   }
 }
+
+button {
+  &:focus {
+    outline: none;
+  }
+}
