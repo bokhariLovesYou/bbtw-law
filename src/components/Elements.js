@@ -3,6 +3,7 @@ import styled, { css } from "styled-components"
 export const Button = styled.button`
   margin: 0;
   padding: 0.6rem 2rem;
+  padding: ${props => (props.MenuButton ? "0.3rem 1.5rem" : "")};
   border-radius: 4px;
   background-color: #e82e37;
   box-shadow: 0 4px 14px 0 rgba(232, 46, 55, 0.38);

@@ -85,3 +85,15 @@ button {
     outline: none;
   }
 }
+
+.cta-link {
+  position: relative;
+  &:after {
+    content: "→";
+    display: inline-block;
+    margin-left: 0.436em;
+    margin-right: -1.618em;
+    position: relative;
+    top: 0.01em;
+  }
+}

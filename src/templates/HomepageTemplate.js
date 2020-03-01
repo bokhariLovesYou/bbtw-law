@@ -27,16 +27,15 @@ import { Container, Row, Col } from "react-bootstrap"
 
 export class IndexPage extends Component {
   render() {
-    const { frontmatter } = this.props.data.markdownRemark
+    const { frontmatter } = this.props.data.pageData
     const {
       hero,
       sectionTwo,
       sectionThree,
       sectionFour,
       sectionFive,
-      sectionSix,
     } = frontmatter
-    console.log(sectionThree)
+    const { globalCTA } = this.props.data.globalData.frontmatter
     return (
       <Layout>
         <SEO title={frontmatter.title} description={frontmatter.description} />
@@ -159,12 +158,12 @@ export class IndexPage extends Component {
           <CTAVector className="cta-vector" />
           <Container>
             <ContentBox EquipWidth>
-              <TagLine Red>{sectionSix.span}</TagLine>
+              <TagLine Red>{globalCTA.span}</TagLine>
               <HeadingTwo Large Red>
-                {sectionSix.heading}
+                {globalCTA.heading}
               </HeadingTwo>
-              <SubTitle Red>{sectionSix.subtitle}</SubTitle>
-              <Button className="mt-3">{sectionSix.buttonTitle}</Button>
+              <SubTitle Red>{globalCTA.subtitle}</SubTitle>
+              <Button className="mt-3">{globalCTA.buttonTitle}</Button>
             </ContentBox>
           </Container>
         </Section>
@@ -177,7 +176,7 @@ export default IndexPage
 
 export const query = graphql`
   query($path: String!) {
-    markdownRemark(frontmatter: { path: { eq: $path } }) {
+    pageData: markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
       frontmatter {
         title
@@ -238,7 +237,13 @@ export const query = graphql`
             }
           }
         }
-        sectionSix {
+      }
+    }
+    globalData: markdownRemark(
+      id: { eq: "0a9c6531-c0a4-5900-9d7d-94f0d022bda4" }
+    ) {
+      frontmatter {
+        globalCTA {
           span
           heading
           subtitle

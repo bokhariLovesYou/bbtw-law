@@ -5,7 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import "../styles/index.scss"
 import styled from "styled-components"
 const Main = styled.main`
-  padding-top: 89px;
+  padding-top: 88px;
 `
 
 export class Layout extends Component {
