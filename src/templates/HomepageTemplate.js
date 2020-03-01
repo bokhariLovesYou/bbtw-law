@@ -36,6 +36,7 @@ export class IndexPage extends Component {
       sectionFive,
     } = frontmatter
     const { globalCTA } = this.props.data.globalData.frontmatter
+    console.log(globalCTA)
     return (
       <Layout>
         <SEO title={frontmatter.title} description={frontmatter.description} />
@@ -239,9 +240,7 @@ export const query = graphql`
         }
       }
     }
-    globalData: markdownRemark(
-      id: { eq: "0a9c6531-c0a4-5900-9d7d-94f0d022bda4" }
-    ) {
+    globalData: markdownRemark(frontmatter: { path: { eq: "/__data__" } }) {
       frontmatter {
         globalCTA {
           span
