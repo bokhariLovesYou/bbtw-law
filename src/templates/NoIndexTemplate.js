@@ -13,17 +13,3 @@ export class NoIndexTemplate extends Component {
 }
 
 export default NoIndexTemplate
-
-export const query = graphql`
-  query($path: String!) {
-    markdownRemark(frontmatter: { path: { eq: $path } }) {
-      html
-      frontmatter {
-        title
-        path
-        description
-        template
-      }
-    }
-  }
-`
