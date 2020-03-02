@@ -68,6 +68,7 @@ export const Section = styled.section`
     padding: ${props => (props.HPHero ? "7rem 0" : "")};
     padding: 7rem 0;
     padding: ${props => (props.ZeroSmallVerticalPadding ? "7rem 0" : "")};
+    padding: ${props => (props.Small ? "4rem 0" : "")};
   }
   position: relative;
   background-color: #fff;

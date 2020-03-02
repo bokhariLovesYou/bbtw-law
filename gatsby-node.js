@@ -5,6 +5,8 @@ exports.createPages = ({ actions, graphql }) => {
   const templates = {
     HomepageTemplate: path.resolve("src/templates/HomepageTemplate.js"),
     TheFirmTemplate: path.resolve("src/templates/TheFirmTemplate.js"),
+    ContactTemplate: path.resolve("src/templates/ContactTemplate.js"),
+    ThankyouTemplate: path.resolve("src/templates/ThankyouTemplate.js"),
     NoIndexTemplate: path.resolve("src/templates/NoIndexTemplate.js"),
   }
 
@@ -38,6 +40,10 @@ exports.createPages = ({ actions, graphql }) => {
             return templates.TheFirmTemplate
           } else if (page.node.frontmatter.template === "NoIndexTemplate") {
             return templates.NoIndexTemplate
+          } else if (page.node.frontmatter.template === "ContactTemplate") {
+            return templates.ContactTemplate
+          } else if (page.node.frontmatter.template === "ThankyouTemplate") {
+            return templates.ThankyouTemplate
           }
         })(),
       })

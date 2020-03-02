@@ -134,12 +134,6 @@ const ModalContentList = styled.ul`
     width: 100%;
     top: 0;
   }
-  &:last-child {
-    a {
-      border-bottom-right-radius: 8px;
-      border-bottom-left-radius: 8px;
-    }
-  }
 `
 
 const ModalContentListItem = styled.li`
@@ -159,6 +153,12 @@ const ModalContentListItem = styled.li`
     &:hover {
       text-decoration: none;
       background-color: rgba(14, 30, 37, 0.09);
+    }
+  }
+  &:last-child {
+    a {
+      border-bottom-right-radius: 8px;
+      border-bottom-left-radius: 8px;
     }
   }
 `
@@ -255,7 +255,7 @@ export class Header extends Component {
                     <Link to="/">Pricing</Link>
                   </ModalContentListItem>
                   <ModalContentListItem CTA>
-                    <Link className="cta-link" to="/">
+                    <Link className="cta-link" to="/contact">
                       Contact Us
                     </Link>
                   </ModalContentListItem>

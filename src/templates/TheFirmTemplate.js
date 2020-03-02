@@ -37,7 +37,7 @@ export class TheFirmTemplate extends Component {
     return (
       <Layout>
         <SEO title="The Firm" />
-        <Section LightYellow>
+        <Section LightYellow Small>
           <Graphic Pink Top Left Medium Rounded />
           <Container>
             <ContentBox className="text-lg-center" EquipWidth800 Centered>
