@@ -252,7 +252,7 @@ export class Header extends Component {
                     <Link to="/the-firm">The Firm</Link>
                   </ModalContentListItem>
                   <ModalContentListItem>
-                    <Link to="/">Pricing</Link>
+                    <Link to="/">People</Link>
                   </ModalContentListItem>
                   <ModalContentListItem CTA>
                     <Link className="cta-link" to="/contact">

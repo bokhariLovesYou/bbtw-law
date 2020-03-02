@@ -61,7 +61,7 @@ export class Form extends Component {
           method="post"
           data-netlify="true"
           data-netlify-honeypot="bot-field"
-          action="/thank-you"
+          action={this.props.action}
         >
           <input type="hidden" name="bot-field" />
           <input type="hidden" name="form-name" value="contact" />

@@ -55,7 +55,7 @@ export class ContactTemplate extends Component {
               </Col>
               <Col lg={7}>
                 <ContentBox>
-                  <Form />
+                  <Form action="/thank-you" />
                 </ContentBox>
               </Col>
             </Row>
