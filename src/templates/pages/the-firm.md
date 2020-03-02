@@ -5,7 +5,7 @@ description: This is The Firm
 template: TheFirmTemplate
 hero:
   span: PAKISTAN LAW REDEFINED
-  heading: Lorem Ipsum Generator
+  heading: The Firm
   subtitle: Livly focuses on delivering the best living and management experiences through modern apartment technology.
 sectionTwo:
   span: PAKISTAN LAW REDEFINED

@@ -101,7 +101,7 @@ export class Form extends Component {
             </Field>
           </FlexWrapper>
           <Field>
-            <Textarea placeholder="Message"></Textarea>
+            <Textarea name="message" placeholder="Message"></Textarea>
           </Field>
           <Field>
             <Button type="submit">Submit</Button>
