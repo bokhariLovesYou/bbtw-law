@@ -39,9 +39,13 @@ export const Graphic = styled.div`
   background-color: ${props => (props.Yellow ? "#f8eddb" : "")};
   background-color: ${props => (props.LightYellow ? "#fff8ed" : "")};
   left: ${props => (props.Left ? "-14rem" : "")};
+  left: ${props => (props.ExtremeLeft ? "-30rem" : "")};
   bottom: ${props => (props.Bottom ? "-40rem" : "")};
   background-color: ${props => (props.Pink ? "#ffd8dd2b" : "")};
   background-color: ${props => (props.DarkPink ? "#ffd8dd6b" : "")};
+  background-color: ${props => (props.Greenish ? "#edf5f37d" : "")};
+  background-color: ${props => (props.Gray ? "#404040" : "")};
+  background-color: ${props => (props.DarkGreen ? "#3b44406b" : "")};
 `
 
 export const BackgroundOverlay = styled.div`
@@ -117,6 +121,7 @@ export const LinkButton = styled.span`
 export const ContentBox = styled.div`
   padding-top: ${props => (props.ColumnBox ? "4rem;" : "")};
   padding-top: ${props => (props.ColumnBoxHorizontallyInverted ? "4rem;" : "")};
+  padding-top: ${props => (props.Small ? "2rem;" : "")};
   position: relative;
   z-index: 1;
   max-width: ${props => (props.EquipWidth ? "500px" : "")};

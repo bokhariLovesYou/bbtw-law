@@ -3,7 +3,6 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import { graphql } from "gatsby"
 import SEO from "../components/seo"
-import HeroGraphic from "../images/svgs/hero-graphic.svg"
 import CTAVector from "../images/svgs/cta-vector.svg"
 // Img
 import Img from "gatsby-image"
@@ -25,73 +24,92 @@ import {
 // Bootstrap
 import { Container, Row, Col } from "react-bootstrap"
 
-export class IndexPage extends Component {
+export class PeopleTemplate extends Component {
   render() {
-    const { frontmatter } = this.props.data.pageData
     const {
+      title,
+      description,
       hero,
       sectionTwo,
       sectionThree,
       sectionFour,
       sectionFive,
-    } = frontmatter
+    } = this.props.data.pageData.frontmatter
     const { globalCTA } = this.props.data.globalData.frontmatter
-    console.log(globalCTA)
     return (
       <Layout>
-        <SEO title={frontmatter.title} description={frontmatter.description} />
-        <Section LightRed HPHero>
-          <Graphic Yellow Top Right Medium Rounded />
+        <SEO title={title} description={description} />
+        <Section Dark Small>
+          {/* <Graphic Yellow Top Right Medium Rounded /> */}
+          <Graphic Gray ExtremeLeft Small Rounded />
+          <Graphic DarkGreen Left Medium Rounded />
+          <Container>
+            <ContentBox className="text-lg-center" EquipWidth800 Centered>
+              <TagLine Red>{hero.span}</TagLine>
+              <HeadingOne HeroHeading>{hero.heading}</HeadingOne>
+              {hero.description.map((elem, index) => {
+                return (
+                  <SubTitle
+                    className={
+                      hero.description.length === index + 1 ? "" : "mb-0"
+                    }
+                    HeroSubTitle
+                    key={index}
+                  >
+                    {elem}
+                  </SubTitle>
+                )
+              })}
+            </ContentBox>
+          </Container>
+        </Section>
+        <Section>
+          <Graphic Pink Top Right Medium Rounded />
           <Graphic LightYellow Top Right Small Rounded />
           <Container>
-            <Row>
+            <Row className="align-items-lg-center">
               <Col lg={6}>
                 <ContentBox>
-                  <TagLine Red>{hero.span}</TagLine>
-                  <HeadingOne Red HeroHeading>
-                    {hero.heading}
-                  </HeadingOne>
-                  <SubTitle Red HeroSubTitle Lg768>
-                    {hero.subtitle}
-                  </SubTitle>
-                  <Link to={hero.buttonDestination}>
-                    <Button>{hero.buttonTitle}</Button>
-                  </Link>
+                  <Img
+                    className="column-image column-image--small"
+                    fluid={sectionTwo.image.childImageSharp.fluid}
+                    alt="Lahore"
+                  />
                 </ContentBox>
               </Col>
               <Col lg={6}>
-                <HeroGraphic className="hp--graphic" />
+                <ContentBox>
+                  <ContentBox ColumnBox Small>
+                    <TagLine Red>{sectionTwo.span}</TagLine>
+                    <HeadingTwo Large>{sectionTwo.heading}</HeadingTwo>
+                    {sectionTwo.description.map((description, index) => {
+                      return <SubTitle key={index}>{description}</SubTitle>
+                    })}
+                    <Link to={sectionTwo.buttonDestination}>
+                      <LinkButton Red>{sectionTwo.buttonTitle}</LinkButton>
+                    </Link>
+                  </ContentBox>
+                </ContentBox>
               </Col>
             </Row>
           </Container>
         </Section>
         <Section>
-          <Graphic Pink Left Bottom Medium Rounded />
+          <Graphic Pink Top Left Medium Rounded />
+          <Graphic Greenish Top ExtremeLeft Small Rounded />
           <Container>
-            <ContentBox className="text-md-center" EquipWidth800 Centered>
-              <TagLine Red>{sectionTwo.span}</TagLine>
-              <HeadingTwo Large>{sectionTwo.heading}</HeadingTwo>
-              <SubTitle HeroSubTitle className="mb-0">
-                {sectionTwo.subtitle}
-              </SubTitle>
-            </ContentBox>
-          </Container>
-        </Section>
-        <Section Dark ZeroSmallVerticalPadding>
-          <BackgroundOverlay Left Pink />
-          <Container>
-            <Row className="align-items-md-center">
-              <Col lg={6}>
-                <FluidImageWrapper>
+            <Row className="align-items-lg-center">
+              <Col lg={{ span: 6, order: 2 }}>
+                <ContentBox>
                   <Img
-                    className="column-image"
+                    className="column-image column-image--small"
                     fluid={sectionThree.image.childImageSharp.fluid}
                     alt="Lahore"
                   />
-                </FluidImageWrapper>
+                </ContentBox>
               </Col>
-              <Col lg={6}>
-                <ContentBox ColumnBox>
+              <Col lg={{ span: 6, order: 1 }}>
+                <ContentBox Small ColumnBoxHorizontallyInverted>
                   <TagLine Red>{sectionThree.span}</TagLine>
                   <HeadingTwo Large>{sectionThree.heading}</HeadingTwo>
                   {sectionThree.description.map((description, index) => {
@@ -105,37 +123,23 @@ export class IndexPage extends Component {
             </Row>
           </Container>
         </Section>
-        <Section ZeroSmallVerticalPadding>
-          <Graphic Pink Left Bottom Medium Rounded />
-          <BackgroundOverlay Right Peach />
+        <Section LightYellow>
           <Container>
-            <Row className="align-items-md-center">
-              <Col lg={{ span: 6, order: 2 }}>
-                <FluidImageWrapper HorizontallyInverted>
-                  <Img
-                    className="column-image"
-                    fluid={sectionFour.image.childImageSharp.fluid}
-                    alt="Books"
-                  />
-                </FluidImageWrapper>
-              </Col>
-              <Col lg={{ span: 6, order: 1 }}>
-                <ContentBox ColumnBoxHorizontallyInverted>
-                  <TagLine Red>{sectionFour.span}</TagLine>
-                  <HeadingTwo Large>{sectionFour.heading}</HeadingTwo>
-                  {sectionFour.description.map((description, index) => {
-                    return <SubTitle key={index}>{description}</SubTitle>
-                  })}
-                  <Link to={sectionFour.buttonDestination}>
-                    <LinkButton Red>{sectionFour.buttonTitle}</LinkButton>
-                  </Link>
-                </ContentBox>
-              </Col>
-            </Row>
+            <ContentBox>
+              <TagLine Red>{sectionFour.span}</TagLine>
+              <HeadingTwo Large>{sectionFour.heading}</HeadingTwo>
+              {sectionFour.description.map((elem, index) => {
+                return (
+                  <SubTitle HeroSubTitle key={index}>
+                    {elem}
+                  </SubTitle>
+                )
+              })}
+            </ContentBox>
           </Container>
         </Section>
         <Section Dark ZeroSmallVerticalPadding>
-          <BackgroundOverlay Left LightBlue />
+          <BackgroundOverlay Left Peach />
           <Container>
             <Row className="align-items-md-center">
               <Col lg={6}>
@@ -143,7 +147,7 @@ export class IndexPage extends Component {
                   <Img
                     className="column-image"
                     fluid={sectionFive.image.childImageSharp.fluid}
-                    alt="Kashmiri Girl"
+                    alt="Lahore"
                   />
                 </FluidImageWrapper>
               </Col>
@@ -183,7 +187,7 @@ export class IndexPage extends Component {
   }
 }
 
-export default IndexPage
+export default PeopleTemplate
 
 export const query = graphql`
   query($path: String!) {
@@ -197,14 +201,21 @@ export const query = graphql`
         hero {
           span
           heading
-          subtitle
-          buttonTitle
-          buttonDestination
+          description
         }
         sectionTwo {
           span
           heading
-          subtitle
+          description
+          buttonTitle
+          buttonDestination
+          image {
+            childImageSharp {
+              fluid(maxWidth: 1400, maxHeight: 1400) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
         }
         sectionThree {
           span
@@ -224,15 +235,6 @@ export const query = graphql`
           span
           heading
           description
-          buttonTitle
-          buttonDestination
-          image {
-            childImageSharp {
-              fluid(maxWidth: 1400, maxHeight: 1400) {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
         }
         sectionFive {
           span

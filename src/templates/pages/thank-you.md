@@ -1,6 +1,6 @@
 ---
-title: Noindex
-description: Noindex Nofollow
+title: Thank You!
+description: We've received your submission.
 path: /thank-you
 template: ThankyouTemplate
 hero:

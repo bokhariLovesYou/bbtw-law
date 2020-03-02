@@ -1,6 +1,6 @@
 ---
 path: /the-firm
-title: The Firm
+title: The Firm BBT
 description: This is The Firm
 template: TheFirmTemplate
 hero:

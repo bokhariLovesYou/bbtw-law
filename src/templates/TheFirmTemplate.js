@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-// import { Link } from "gatsby"
+import { Link } from "gatsby"
 import Layout from "../components/layout"
 import { graphql } from "gatsby"
 import SEO from "../components/seo"
@@ -27,6 +27,8 @@ import { Container, Row, Col } from "react-bootstrap"
 export class TheFirmTemplate extends Component {
   render() {
     const {
+      title,
+      description,
       hero,
       sectionTwo,
       sectionThree,
@@ -36,7 +38,7 @@ export class TheFirmTemplate extends Component {
     const { globalCTA } = this.props.data.globalData.frontmatter
     return (
       <Layout>
-        <SEO title="The Firm" />
+        <SEO title={title} description={description} />
         <Section LightYellow Small>
           <Graphic Pink Top Left Medium Rounded />
           <Container>
@@ -86,7 +88,9 @@ export class TheFirmTemplate extends Component {
                   {sectionThree.description.map((description, index) => {
                     return <SubTitle key={index}>{description}</SubTitle>
                   })}
-                  <LinkButton Red>{sectionThree.buttonTitle}</LinkButton>
+                  <Link to={sectionThree.buttonDestination}>
+                    <LinkButton Red>{sectionThree.buttonTitle}</LinkButton>
+                  </Link>
                 </ContentBox>
               </Col>
             </Row>
@@ -113,7 +117,9 @@ export class TheFirmTemplate extends Component {
                   {sectionFour.description.map((description, index) => {
                     return <SubTitle key={index}>{description}</SubTitle>
                   })}
-                  <LinkButton Red>{sectionFour.buttonTitle}</LinkButton>
+                  <Link to={sectionFour.buttonDestination}>
+                    <LinkButton Red>{sectionFour.buttonTitle}</LinkButton>
+                  </Link>
                 </ContentBox>
               </Col>
             </Row>
@@ -139,7 +145,9 @@ export class TheFirmTemplate extends Component {
                   {sectionFive.description.map((description, index) => {
                     return <SubTitle key={index}>{description}</SubTitle>
                   })}
-                  <LinkButton Red>{sectionFive.buttonTitle}</LinkButton>
+                  <Link to={sectionFive.buttonDestination}>
+                    <LinkButton Red>{sectionFive.buttonTitle}</LinkButton>
+                  </Link>
                 </ContentBox>
               </Col>
             </Row>
@@ -155,7 +163,9 @@ export class TheFirmTemplate extends Component {
                 {globalCTA.heading}
               </HeadingTwo>
               <SubTitle Red>{globalCTA.subtitle}</SubTitle>
-              <Button className="mt-3">{globalCTA.buttonTitle}</Button>
+              <Link to={globalCTA.buttonDestination}>
+                <Button className="mt-3">{globalCTA.buttonTitle}</Button>
+              </Link>
             </ContentBox>
           </Container>
         </Section>

@@ -1,6 +1,6 @@
 ---
-title: Noindex
-description: Noindex Nofollow
+title: Contact BBT
+description: Contact BBT
 path: /contact
 template: ContactTemplate
 hero:

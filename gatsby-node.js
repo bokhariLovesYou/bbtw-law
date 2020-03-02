@@ -7,6 +7,7 @@ exports.createPages = ({ actions, graphql }) => {
     TheFirmTemplate: path.resolve("src/templates/TheFirmTemplate.js"),
     ContactTemplate: path.resolve("src/templates/ContactTemplate.js"),
     ThankyouTemplate: path.resolve("src/templates/ThankyouTemplate.js"),
+    PeopleTemplate: path.resolve("src/templates/PeopleTemplate.js"),
     NoIndexTemplate: path.resolve("src/templates/NoIndexTemplate.js"),
   }
 
@@ -44,6 +45,8 @@ exports.createPages = ({ actions, graphql }) => {
             return templates.ContactTemplate
           } else if (page.node.frontmatter.template === "ThankyouTemplate") {
             return templates.ThankyouTemplate
+          } else if (page.node.frontmatter.template === "PeopleTemplate") {
+            return templates.PeopleTemplate
           }
         })(),
       })

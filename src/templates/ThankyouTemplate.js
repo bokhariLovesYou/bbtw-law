@@ -19,10 +19,14 @@ import Container from "react-bootstrap/Container"
 
 export class ThankyouTemplate extends Component {
   render() {
-    const { hero } = this.props.data.markdownRemark.frontmatter
+    const {
+      hero,
+      title,
+      description,
+    } = this.props.data.markdownRemark.frontmatter
     return (
       <Layout>
-        <SEO title="The Firm" />
+        <SEO title={title} description={description} />
         <Section Peach Small>
           <Graphic Yellow Top Right Medium Rounded />
           <Graphic LightYellow Top Right Small Rounded />

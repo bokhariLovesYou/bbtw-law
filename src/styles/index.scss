@@ -50,6 +50,12 @@ h6,
 
 .column-image {
   height: 500px;
+  &.column-image--small {
+    height: 300px;
+    @media (min-width: 992px) {
+      height: 600px;
+    }
+  }
   @media (min-width: 992px) {
     height: 600px;
   }

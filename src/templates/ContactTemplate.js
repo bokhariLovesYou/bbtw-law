@@ -20,10 +20,14 @@ import { Container, Row, Col } from "react-bootstrap"
 
 export class ContactTemplate extends Component {
   render() {
-    const { hero } = this.props.data.markdownRemark.frontmatter
+    const {
+      hero,
+      title,
+      description,
+    } = this.props.data.markdownRemark.frontmatter
     return (
       <Layout>
-        <SEO title="The Firm" />
+        <SEO title={title} description={description} />
         <Section Peach Small>
           <Graphic Pink Top Right Medium Rounded />
           <Container>
