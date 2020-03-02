@@ -177,7 +177,9 @@ export class PeopleTemplate extends Component {
               </HeadingTwo>
               <SubTitle Red>{globalCTA.subtitle}</SubTitle>
               <Link to={globalCTA.buttonDestination}>
-                <Button className="mt-3">{globalCTA.buttonTitle}</Button>
+                <Button type="button" className="mt-3">
+                  {globalCTA.buttonTitle}
+                </Button>
               </Link>
             </ContentBox>
           </Container>

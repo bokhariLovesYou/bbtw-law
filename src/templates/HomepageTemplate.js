@@ -55,7 +55,7 @@ export class IndexPage extends Component {
                     {hero.subtitle}
                   </SubTitle>
                   <Link to={hero.buttonDestination}>
-                    <Button>{hero.buttonTitle}</Button>
+                    <Button type="button">{hero.buttonTitle}</Button>
                   </Link>
                 </ContentBox>
               </Col>
@@ -173,7 +173,9 @@ export class IndexPage extends Component {
               </HeadingTwo>
               <SubTitle Red>{globalCTA.subtitle}</SubTitle>
               <Link to={globalCTA.buttonDestination}>
-                <Button className="mt-3">{globalCTA.buttonTitle}</Button>
+                <Button type="button" className="mt-3">
+                  {globalCTA.buttonTitle}
+                </Button>
               </Link>
             </ContentBox>
           </Container>

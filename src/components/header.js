@@ -232,7 +232,9 @@ export class Header extends Component {
             </CustomColumn>
             <CustomColumn>
               <ContentBox>
-                <Button onClick={this.openMenu}>Menu</Button>
+                <Button type="button" onClick={this.openMenu}>
+                  Menu
+                </Button>
               </ContentBox>
             </CustomColumn>
             {/* Menu Modal */}
