@@ -67,23 +67,25 @@ h6,
     height: auto;
     display: block;
     position: absolute;
-    top: -5rem;
+    top: 2.5rem;
     right: -29%;
     width: 600px;
   }
   @media (min-width: 992px) {
     right: -10rem;
+    width: 700px;
+    top: 7rem;
   }
   @media (min-width: 1350px) {
     width: 800px;
   }
   @media (min-width: 1500px) {
     width: 990px;
-    top: -6rem;
+    top: 2rem;
   }
-  @media (min-width: 1800px) {
-    top: -11rem;
-  }
+  // @media (min-width: 1800px) {
+  //   top: -11rem;
+  // }
 }
 
 button {

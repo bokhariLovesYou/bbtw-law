@@ -12,7 +12,7 @@ hero:
   buttonDestination: /contact
 sectionTwo:
   span: THE SUPPORT
-  heading: Local Depth, Local Reach
+  heading: Local Depth, Global Reach
   subtitle: With our network of lawyers and consultants we support our clients wherever they do business.
 sectionThree:
   span: A BOUTIQUE LAW FIRM
