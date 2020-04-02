@@ -1,7 +1,7 @@
 ---
 path: /
-title: Homepage
-description: This is the homepage
+title: Buttar, Bokhari and Tas | Finding legal solutions for you
+description: Buttar, Bokhari and Tas (BBT) is a boutique law firm established in 1990. BBT is full service law firm assisting and advising clients on entire spectrum of corporate and commercial laws as well as contentious criminal issues.
 template: HomepageTemplate
 # Page Content
 hero:
