@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import { graphql } from "gatsby"
 import SEO from "../components/seo"
-import HeroGraphic from "../images/svgs/hero-graphic.svg"
+import HeroGraphic from "../images/svgs/taraazoo.svg"
 import CTAVector from "../images/svgs/cta-vector.svg"
 // Img
 import Img from "gatsby-image"

@@ -31,16 +31,22 @@ h6,
 }
 
 .hp--graphic {
-  height: 400px;
+  width: 500px;
+  height: auto;
   position: absolute;
+  right: -4rem;
+  top: 2.5rem;
   @media (min-width: 768px) {
-    height: 700px;
+    width: 700px;
+    top: 0;
+    right: -5rem;
   }
   @media (min-width: 992px) {
-    right: -6rem;
-    width: 650px;
+    right: -15rem;
+    width: 1000px;
     height: auto;
-    bottom: -10rem;
+    top: -8.5rem;
+    -webkit-filter: saturate(0.7);
     filter: saturate(0.7);
   }
   &:not(:root) {
