@@ -250,12 +250,12 @@ export class Header extends Component {
                   <ModalContentListItem>
                     <Link to="/">Home</Link>
                   </ModalContentListItem>
-                  <ModalContentListItem>
+                  {/* <ModalContentListItem>
                     <Link to="#">The Firm</Link>
-                  </ModalContentListItem>
-                  <ModalContentListItem>
+                  </ModalContentListItem> */}
+                  {/* <ModalContentListItem>
                     <Link to="#">People</Link>
-                  </ModalContentListItem>
+                  </ModalContentListItem> */}
                   <ModalContentListItem CTA>
                     <Link className="cta-link" to="/contact">
                       Contact Us

@@ -41,7 +41,7 @@ export class ContactTemplate extends Component {
         </Section>
         <Section Small>
           <Container>
-            <Row>
+            <Row className="align-items-lg-center">
               <Col lg={5} className="pr-lg-5">
                 <ContentBox EquipWidth>
                   <TagLine Red>REQUEST A QUOTE</TagLine>
@@ -51,9 +51,17 @@ export class ContactTemplate extends Component {
                     importance of pro-bono work for the profession, society and
                     promotion of the rule of law.
                   </SubTitle>
-                  <SubTitle HeroSubTitle Lg768>
+                  <SubTitle HeroSubTitle Lg768 className="mb-1">
                     <a className="external-link" href="tel:+923218521155">
                       Phone: +92 321 852 11 55
+                    </a>
+                  </SubTitle>
+                  <SubTitle HeroSubTitle Lg768 className="mb-1">
+                    <a
+                      className="external-link"
+                      href="mailto:enquiries.bbt@outlook.com"
+                    >
+                      Mail: enquiries.bbt@outlook.com
                     </a>
                   </SubTitle>
                 </ContentBox>
