@@ -45,7 +45,7 @@ export class IndexPage extends Component {
                   <HeadingOne Red HeroHeading>
                     {hero.heading}
                   </HeadingOne>
-                  <SubTitle Red HeroSubTitle Lg768>
+                  <SubTitle Red HeroSubTitle Large>
                     {hero.subtitle}
                   </SubTitle>
                   <Link to={hero.buttonDestination}>
@@ -137,7 +137,7 @@ export class IndexPage extends Component {
               <HeadingTwo Large Red>
                 {globalCTA.heading}
               </HeadingTwo>
-              <SubTitle Red Lg768>
+              <SubTitle Red Lg768 className="no-anchor-text">
                 {globalCTA.subtitle}
               </SubTitle>
               <Link to={globalCTA.buttonDestination}>

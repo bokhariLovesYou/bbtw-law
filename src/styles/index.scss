@@ -110,3 +110,13 @@ button {
     color: $red;
   }
 }
+
+.no-anchor-text {
+  a {
+    color: $red;
+    &:hover {
+      color: $red;
+      text-decoration: underline;
+    }
+  }
+}

@@ -189,9 +189,13 @@ const HeroSubTitle = `
 
 export const SubTitle = styled.p`
   color: ${props => (props.Red ? "#e82e37;" : "")};
+  font-size: ${props => (props.Large ? "1.15rem;" : "")};
+  margin-bottom: ${props => (props.Large ? "1.15rem;" : "")};
   @media (min-width: 768px) {
     font-size: ${props => (props.Lg768 ? "1.35rem;" : "")};
     margin-bottom: ${props => (props.Lg768 ? "1.35rem;" : "")};
+    font-size: ${props => (props.Large ? "1.35rem;" : "")};
+    margin-bottom: ${props => (props.Large ? "1.35rem;" : "")};
   }
   ${props =>
     props.HeroSubTitle
