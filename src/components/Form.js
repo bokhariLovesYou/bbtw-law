@@ -104,7 +104,7 @@ export class Form extends Component {
             <Textarea name="message" placeholder="Message"></Textarea>
           </Field>
           <Field>
-            <Button type="submit">Submit</Button>
+            <Button type="submit">Get in Touch</Button>
           </Field>
         </FormContents>
       </FormWrapper>

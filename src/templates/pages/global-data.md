@@ -5,8 +5,8 @@ path: /__data__
 template: NoIndexTemplate
 globalCTA:
   span: PAKISTAN LAW REDEFINED
-  heading: Lorem Ipsum Generator
-  subtitle: Livly focuses on delivering the best living and management experiences through modern apartment technology.
+  heading: Ready, Steady Grow.
+  subtitle: Contact us by clicking the button below, or give us a call at +92 321 852 11 55
   buttonTitle: Get In Touch
   buttonDestination: /contact
 ---

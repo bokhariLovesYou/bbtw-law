@@ -134,6 +134,7 @@ export const ContentBox = styled.div`
       props.ColumnBoxHorizontallyInverted ? "0 4rem 0 0" : ""};
     padding-top: ${props => (props.PaddingTop ? "0;" : "")};
     max-width: ${props => (props.EquipWidth ? "600px" : "")};
+    max-width: ${props => (props.EquipWidth500 ? "500px" : "")};
     margin-left: ${props => (props.Centered ? "auto" : "")};
     margin-right: ${props => (props.Centered ? "auto" : "")};
   }

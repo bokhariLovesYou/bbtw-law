@@ -6,30 +6,30 @@ template: HomepageTemplate
 # Page Content
 hero:
   span: PAKISTAN LAW REDEFINED
-  heading: Lorem Ipsum Generator
-  subtitle: Livly focuses on delivering the best living and management experiences through modern apartment technology.
+  heading: Buttar, Bokhari and Tas
+  subtitle: Finding legal solutions for you
   buttonTitle: Learn More
   buttonDestination: /contact
 sectionTwo:
-  span: PAKISTAN LAW REDEFINED
-  heading: Lorem Ipsum Generator
-  subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  span: THE SUPPORT
+  heading: Local Depth, Local Reach
+  subtitle: With our network of lawyers and consultants we support our clients wherever they do business.
 sectionThree:
-  span: PAKISTAN LAW REDEFINED
-  heading: Lorem Ipsum Generator
+  span: A BOUTIQUE LAW FIRM
+  heading: The Firm
   description:
-    - Livly focuses on delivering the best living and management experiences through modern apartment technology. Livly focuses on delivering the best living and management experiences through modern apartment technology.
-    - Livly focuses on delivering the best living and management experiences through modern apartment technology. Livly focuses on delivering the best living and management experiences through modern apartment technology.
+    - Buttar, Bokhari and Tas (BBT) is a boutique law firm established in 1990. BBT is full service law firm assisting and advising clients on entire spectrum of corporate and commercial laws as well as contentious criminal issues.
+    - With vast knowledge of local laws and strong on the ground capabilities BBT offers one stop shop for foreign investors investing in Pakistan. Our dynamic team regularly advises businesses on all areas of commercial laws including Corporate Compliance, Corporate Restructuring, Agency-Distribution and Franchising, Intellectual Property, Taxation and Employment.
   image: ../../images/lahore-three.jpg
   buttonTitle: Learn more ›
   buttonDestination: /contact
 
 sectionFour:
-  span: PAKISTAN LAW REDEFINED
-  heading: Lorem Ipsum Generator
+  span: A BELIEF
+  heading: Pro Bono
   description:
-    - Livly focuses on delivering the best living and management experiences through modern apartment technology. Livly focuses on delivering the best living and management experiences through modern apartment technology.
-    - Livly focuses on delivering the best living and management experiences through modern apartment technology. Livly focuses on delivering the best living and management experiences through modern apartment technology.
+    - At Buttar, Bokhari & Tas we strongly believe in the importance of pro-bono work for the profession, society and promotion of the rule of law.
+    - Everyone at BBT plays a role in our pro-bono practice. Our lawyers spend time each year providing free legal service to individuals and organisations that qualify for pro-bono assistance.
   image: ../../images/books.jpeg
   buttonTitle: Learn more ›
   buttonDestination: /contact

@@ -5,5 +5,5 @@ path: /contact
 template: ContactTemplate
 hero:
   span: PAKISTAN LAW REDEFINED
-  heading: Contact Us
+  heading: Get In Touch
 ---

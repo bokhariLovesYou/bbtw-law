@@ -42,17 +42,18 @@ export class ContactTemplate extends Component {
         <Section Small>
           <Container>
             <Row>
-              <Col lg={5}>
+              <Col lg={5} className="pr-lg-5">
                 <ContentBox EquipWidth>
-                  <TagLine Red>{hero.span}</TagLine>
-                  <HeadingTwo Large>{hero.heading}</HeadingTwo>
+                  <TagLine Red>REQUEST A QUOTE</TagLine>
+                  <HeadingTwo Large>Contact Us</HeadingTwo>
                   <SubTitle HeroSubTitle Lg768>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et.
+                    At Buttar, Bokhari & Tas we strongly believe in the
+                    importance of pro-bono work for the profession, society and
+                    promotion of the rule of law.
                   </SubTitle>
                   <SubTitle HeroSubTitle Lg768>
-                    <a className="external-link" href="tel:+923234718555">
-                      Phone: +92 323 4718 555
+                    <a className="external-link" href="tel:+923218521155">
+                      Phone: +92 321 852 11 55
                     </a>
                   </SubTitle>
                 </ContentBox>
