@@ -56,7 +56,7 @@ export class ContactTemplate extends Component {
                       Phone: +92 321 852 11 55
                     </a>
                   </SubTitle>
-                  <SubTitle HeroSubTitle Lg768 className="mb-1">
+                  <SubTitle HeroSubTitle Lg768 className="mb-lg-1">
                     <a
                       className="external-link"
                       href="mailto:enquiries.bbt@outlook.com"
