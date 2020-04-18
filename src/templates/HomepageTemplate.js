@@ -30,7 +30,6 @@ export class IndexPage extends Component {
     const { frontmatter } = this.props.data.pageData
     const { hero, sectionTwo, sectionThree, sectionFour } = frontmatter
     const { globalCTA } = this.props.data.globalData.frontmatter
-    console.log(globalCTA)
     return (
       <Layout>
         <SEO title={frontmatter.title} description={frontmatter.description} />

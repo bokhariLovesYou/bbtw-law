@@ -20,8 +20,14 @@ function SEO({ description, lang, meta, title, noIndex }) {
   )
 
   const metaDescription = description || site.siteMetadata.description
-  const noIndexTag = noIndex || `index, follow`
-
+  const noIndexTag = noIndex
+  const checkNoIndex = () => {
+    if (noIndexTag === "noindex, nofollow") {
+      return true
+    } else {
+      return false
+    }
+  }
   return (
     <Helmet
       htmlAttributes={{
@@ -34,10 +40,12 @@ function SEO({ description, lang, meta, title, noIndex }) {
           name: `description`,
           content: metaDescription,
         },
-        {
-          name: `robots`,
-          content: noIndexTag,
-        },
+        checkNoIndex()
+          ? {
+              name: `robots`,
+              content: noIndexTag,
+            }
+          : "",
         {
           property: `og:title`,
           content: title,
