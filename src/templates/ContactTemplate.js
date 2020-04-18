@@ -59,9 +59,9 @@ export class ContactTemplate extends Component {
                   <SubTitle HeroSubTitle Lg768 className="mb-lg-1">
                     <a
                       className="external-link"
-                      href="mailto:enquiries.bbt@outlook.com"
+                      href="mailto:enquiries@buttarbokharitas.com"
                     >
-                      Mail: enquiries.bbt@outlook.com
+                      Mail: enquiries@buttarbokharitas.com
                     </a>
                   </SubTitle>
                 </ContentBox>
