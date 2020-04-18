@@ -48,6 +48,7 @@ const Textarea = styled.textarea`
   color: #262b2b;
   font-weight: 600;
   min-height: 100px;
+  border-radius: 0;
   &:focus {
     outline: none;
   }
